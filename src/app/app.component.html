@@ -1,1 +1,3 @@
-<router-outlet></router-outlet>
+<main *ngIf="prepareRoute()" [@routeAnimations]="prepareRoute()" class="content">
+  <router-outlet></router-outlet>
+</main>

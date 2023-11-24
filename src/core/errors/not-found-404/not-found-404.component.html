@@ -1,0 +1,6 @@
+<main class="w-[100vw] h-[100vh] flex flex-col justify-center items-center gap-1 font-vazir">
+  <svg-icon class="w-error-icon-sm h-error-icon-sm mb-2 lg:w-error-icon-lg lg:h-error-icon-lg" name="error-404"></svg-icon>
+  <h1 class="text-error-header text-gray-900 text-xl md:text-3xl lg:text-4xl">{{'errors.error_404.title' | localization }}</h1>
+  <p class="text-error-subtitle font-light text-gray-500 text-center text-sm md:text-base lg:text-xl mb-2">{{'errors.error_404.sub_title' | localization }}</p>
+  <button class="w-[100px] h-[40px] border rounded flex justify-center items-center text-sm border-gray-700" [routerLink]="'/home'">صفحه اصلی</button>
+</main>
