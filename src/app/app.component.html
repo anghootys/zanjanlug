@@ -1,3 +1,5 @@
-<main *ngIf="prepareRoute()" [@routeAnimations]="prepareRoute()" class="content">
+<main *ngIf="!duringRoute && prepareRoute()" [@routeAnimations]="prepareRoute()" class="content">
   <router-outlet></router-outlet>
 </main>
+
+<ng-container #loadingContainer></ng-container>

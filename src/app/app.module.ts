@@ -7,6 +7,7 @@ import {AngularSvgIconModule} from "angular-svg-icon";
 import {HttpClientModule} from "@angular/common/http";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {RouterLink, RouterOutlet} from "@angular/router";
+import {LoadingComponent} from "../shared/loading/loading.component";
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import {RouterLink, RouterOutlet} from "@angular/router";
     RouterLink,
     RouterOutlet,
     HttpClientModule,
-    AngularSvgIconModule.forRoot()
+    AngularSvgIconModule.forRoot(),
+    LoadingComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

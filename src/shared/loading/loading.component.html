@@ -1,0 +1,5 @@
+<div [@loadingAnimation] class="w-full h-full flex flex-col justify-center items-center gap-1">
+  <svg-icon [svgClass]="'loading-linux-logo'" [svgStyle]="{'fill': randomColorCode}"
+            class="block w-loading-linux-logo-sm h-loading-linux-logo-sm lg:w-loading-linux-logo-lg lg:h-loading-linux-logo-lg" name="linux-logo"></svg-icon>
+  <h1 [style.color]="randomColorCode" class="text-md font-bold select-none lg:text-xl">{{ 'loading.title' | localization }}</h1>
+</div>

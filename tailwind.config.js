@@ -32,10 +32,16 @@ module.exports = {
       width: {
         'error-icon-sm': '300px',
         'error-icon-lg': '450px',
+
+        'loading-linux-logo-sm': '100px',
+        'loading-linux-logo-lg': '150px',
       },
       height: {
         'error-icon-sm': '105px',
-        'error-icon-lg': '200px'
+        'error-icon-lg': '200px',
+
+        'loading-linux-logo-sm': '100px',
+        'loading-linux-logo-lg': '150px',
       }
     },
   },
