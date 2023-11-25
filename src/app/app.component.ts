@@ -1,4 +1,4 @@
-import {Component, ComponentFactoryResolver, inject, ViewChild, ViewContainerRef} from '@angular/core';
+import {Component, inject, ViewChild, ViewContainerRef} from '@angular/core';
 import {
   ChildrenOutletContexts,
   Event, NavigationCancel,
@@ -6,7 +6,6 @@ import {
   NavigationStart,
   Router,
   RouterEvent,
-  RouterState
 } from '@angular/router';
 import {routeAnimations_fader} from "./app.animations";
 import {filter} from "rxjs";
@@ -43,8 +42,10 @@ export class AppComponent {
           case routerEvent instanceof NavigationEnd:
           case routerEvent instanceof NavigationError:
           case routerEvent instanceof NavigationCancel:
-            this.duringRoute = false;
-            this.makeLoadingComponentHide();
+            setTimeout(() => {
+              this.duringRoute = false;
+              this.makeLoadingComponentHide();
+            }, 300)
             break;
 
           default:
