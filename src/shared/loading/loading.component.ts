@@ -2,7 +2,7 @@ import {Component, inject, OnDestroy, OnInit, ViewEncapsulation} from '@angular/
 import {CommonModule} from '@angular/common';
 import {SvgIconComponent, SvgIconRegistryService} from "angular-svg-icon";
 import {LocalizationPipe} from "../../core/pipes/localization.pipe";
-import {animate, state, style, transition, trigger} from "@angular/animations";
+import {animate, style, transition, trigger} from "@angular/animations";
 
 @Component({
   selector: 'loading',
@@ -29,6 +29,7 @@ export class LoadingComponent implements OnInit, OnDestroy {
   private randomColorCodeGenerationInterval: any = null;
 
   randomColorCode = "#1b9f85";
+  in: any;
 
   ngOnInit() {
     this.svgIconRegistry.loadSvg("/assets/linux-logo.svg", "linux-logo");
