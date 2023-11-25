@@ -13,13 +13,12 @@ import {animate, state, style, transition, trigger} from "@angular/animations";
   encapsulation: ViewEncapsulation.Emulated,
   animations: [
     trigger('loadingAnimation', [
-      state('in', style({opacity: '0', transform: 'scale(0.99)'})),
       transition(":enter", [
-        style({opacity: '0', transform: 'scale(0.99)'}),
-        animate(300, style({opacity: '1', transform: 'scale(1)'}))
+        style({opacity: '0', transform: 'scale(0.99)', 'border-radius': '0.8rem'}),
+        animate(300, style({opacity: '1', transform: 'scale(1)', 'border-radius': '0'}))
       ]),
       transition(":leave", [
-        animate(300, style({opacity: '0', transform: 'scale(0.99)'}))
+        animate(300, style({opacity: '0', transform: 'scale(0.99)', 'border-radius': '.8rem'}))
       ])
     ])
   ],
