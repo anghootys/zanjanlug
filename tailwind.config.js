@@ -35,6 +35,8 @@ module.exports = {
 
         'loading-linux-logo-sm': '100px',
         'loading-linux-logo-lg': '150px',
+
+        'logo-sm': '38px',
       },
       height: {
         'error-icon-sm': '105px',
@@ -42,6 +44,8 @@ module.exports = {
 
         'loading-linux-logo-sm': '100px',
         'loading-linux-logo-lg': '150px',
+
+        'logo-sm': '38px',
       }
     },
   },
